@@ -1,0 +1,46 @@
+{
+  "devDependencies": {
+    "@types/node": "18.6.4",
+    "@typescript-eslint/eslint-plugin": "5.32.0",
+    "@typescript-eslint/parser": "5.32.0",
+    "eslint": "8.21.0",
+    "eslint-config-standard": "17.0.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-n": "15.2.4",
+    "eslint-plugin-promise": "6.0.0",
+    "husky": "8.0.1",
+    "lint-staged": "13.0.3",
+    "prettier": "2.7.1",
+    "typescript": "4.7.4"
+  },
+  "name": "nodetypescriptdemo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install",
+    "lint": "eslint . ",
+    "prettier-format": "prettier --config .prettierrc '*.ts' --write",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kajal110/NodeTypescriptDemo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kajal110/NodeTypescriptDemo/issues"
+  },
+  "homepage": "https://github.com/kajal110/NodeTypescriptDemo#readme",
+  "description": "",
+  "dependencies": {
+    "eslint-config-prettier": "^8.5.0",
+    "express": "^4.18.1"
+  },
+  "lint-staged": {
+    "*.ts": "eslint --cache --fix",
+    "*.{ts,css,md}": "prettier --write"
+  }
+}
